@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/luncher_bg"
         >
 
+    <!--版本信息-->
     <TextView
-            android:layout_width="fill_parent"
+            android:id="@+id/tv_splash_version"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World, MainActivity"
+            android:text="@string/app_version"
+            android:layout_centerInParent="true"
+            android:shadowColor="#FF0000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
             />
-</LinearLayout>
+
+    <!--进度旋转条-->
+    <ProgressBar
+            android:layout_below="@+id/tv_splash_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            />
+</RelativeLayout>
 
