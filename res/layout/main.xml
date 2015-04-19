@@ -3,6 +3,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:background="@drawable/luncher_bg"
+              android:id="@+id/rl_root_splash"
         >
 
     <!--版本信息-->
@@ -27,5 +28,10 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             />
+    <TextView
+            android:id="@+id/tv_update_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前下载进度：0%"/>
 </RelativeLayout>
 
